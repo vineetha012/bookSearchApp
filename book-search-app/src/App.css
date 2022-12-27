@@ -1,0 +1,66 @@
+body{
+padding: 0;
+margin: 0;
+background-color: rgb(243, 215, 157);
+}
+.header{
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font: bold;
+
+}
+form{
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+}
+.searchInput{
+  width: 70%;
+}
+.focus{
+  display: block;
+  color: white;
+ 
+}
+.nofocus{
+  display: none;
+}
+.cardcontainer{
+  min-width: 700px;
+  width: 500px;
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+.card{
+  margin: 2px;
+  width: 200px;
+  height: 320px;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+.card:hover{
+  width: 220px;
+  height: 330px;
+}
+.textcontainer{
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.title{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  margin: 5px;
+}
