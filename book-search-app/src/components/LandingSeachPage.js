@@ -19,30 +19,34 @@ export const LanndingPage = () => {
     console.log(booksData.length)
     return (
         <div>
-            <div style={{ backgroundColor: "rgb(180, 95, 15)" }}>
-                <h1 className='header'>BOOK SEARCH</h1>
+            <div className='headerBackground'>
+                <h1 className='header' >BOOK SEARCH</h1>
             </div>
             <form onClick={(e) => searchHandler(e)}>
-                <div style={{margin:"auto",marginTop:"10px",marginBottom:"20px",width:"100%"}}>
+                <div style={{margin:"auto"}}>
                     <input className='searchInput' type={'text'} placeholder="Search for a book" onChange={(e) => setSearchQueary(e.target.value)} />
-                    <button type='submit'>Search</button>
+                    <button className='submit' type='submit'>Search</button>
                 </div>
 
             </form>
-            <div className='cardcontainer'>
+            <div style={{display:"flex" ,width:"100%"}}>
+                
                 {booksData.length > 0 ?
-                    booksData.map((book, index) => {
-                        return (
-                            <div key={index}>
-                                {/* {console.log(book.volumeInfo)} */}
-                                <BookCard book={book} />
-                            </div>
-                        )
-
-
-                    })
-
-                    : <div>Search A book</div>
+                    <div  className='cardcontainer'>
+                        {
+                            booksData.map((book, index) => {
+                                return (
+                                    <div key={index}>
+                                        {/* {console.log(book.volumeInfo)} */}
+                                        <BookCard book={book} />
+                                    </div>
+                                )
+        
+        
+                            })
+                        }
+                    </div>
+                    : <div style={{textAlign:"center",color:"white",margin:"auto"}}>Search A book</div>
                 }
             </div>
         </div>

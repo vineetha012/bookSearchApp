@@ -1,7 +1,14 @@
 body{
 padding: 0;
 margin: 0;
+background-image: url("https://tse1.mm.bing.net/th?id=OIP.nF0nMbczyLMhsr1FxZK_zAHaFj&pid=Api&P=0");
 background-color: rgb(243, 215, 157);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.headerBackground{
+  height: 70px;
+  background: url("https://tse3.mm.bing.net/th?id=OIP.ti3xB_-ubtrF_2YFCIgmHAHaHa&pid=Api&P=0");
 }
 .header{
   margin: 0;
@@ -10,15 +17,32 @@ background-color: rgb(243, 215, 157);
   text-align: center;
   font-size: 30px;
   font: bold;
+  color: white;
 
 }
 form{
   display: flex;
   width: 100%;
   padding-top: 10px;
+  padding-bottom: 20px;
 }
 .searchInput{
-  width: 70%;
+  width:400px;
+  height: 30px;
+  border-radius: 10px;
+
+  margin-right: 10px;
+}
+.submit{
+  height: 40px;
+  border-radius: 10px;
+  background-color: chocolate;
+  color: white;
+  border: 1px solid rgb(123, 62, 17);
+}
+.submit:hover{
+  background-color: rgb(146, 66, 8);
+
 }
 .focus{
   display: block;
@@ -29,6 +53,7 @@ form{
   display: none;
 }
 .cardcontainer{
+  margin: auto;
   min-width: 700px;
   width: 500px;
   display: grid;
